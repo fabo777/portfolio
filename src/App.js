@@ -52,6 +52,7 @@ const App = () => {
                 href={MarioFabijanecCV}
                 download="Mario Fabijanec CV"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button>Download CV</button>
               </a>
@@ -65,7 +66,7 @@ const App = () => {
                 {myProjects.map((project) => {
                   return (
                     <div key={project.id} className="projects">
-                      <a className="image">
+                      <a href="#" className="image">
                         <img
                           onClick={() => {
                             handleOpen(project.name);
