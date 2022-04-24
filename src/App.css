@@ -1,38 +1,322 @@
-.App {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+body {
+  margin: 0;
+}
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5em;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.maincontainer {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.row {
+  display: flex;
+  overflow: auto;
+  justify-content: space-around;
+}
+.left {
+  width: 30%;
+  height: auto;
+  text-align: right;
+
+  background-image: url("../public/images/fulls/mountain.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll, scroll;
+  background-size: auto, 150%;
+  color: rgb(197, 93, 93);
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  width: 30%;
+  height: 95%;
+  padding-right: 5%;
+  padding-top: 8%;
+}
+.leftContainer h2 {
+  width: 90%;
+  margin: 2% 0 0 10%;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.imageAvatar {
+  border-radius: 100%;
+  width: 35%;
+}
+.icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60%;
+  text-align: right;
+}
+
+.label {
+  text-decoration: none;
+  color: black;
+}
+.github {
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../public/images/thumbs/GitHub-Mark-32px.png");
+}
+.email {
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  background-position: center;
+  background-image: url("../public/images/thumbs/email.png");
+}
+.linkedin {
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+
+  background-image: url("../public/images/thumbs/linkedin.png");
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(215, 213, 213);
+  width: 70%;
+}
+
+.section1 {
+  text-align: left;
+  width: 90%;
+  margin: 8% auto;
+}
+
+.section1 h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.section1 div {
+  font-size: 1.5rem;
+  margin: 0 0 2em 0;
+  line-height: 1.5rem;
+}
+
+.section1 button {
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.line {
+  width: 90%;
+  height: 1px;
+  background-color: black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.section2 {
+  margin: 0 auto;
+  width: 90%;
+}
+.section2 h2 {
+  font-size: 2rem;
+}
+.section2 h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.row2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.projects {
+  width: 48%;
+  height: 25%;
+  margin: 2rem 0 1rem 0;
+  padding: 0;
+  background-repeat: no-repeat;
+}
+.image {
+  cursor: pointer;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img {
+  width: 100%;
+  border-radius: 0.35rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.img:hover {
+  opacity: 0.8;
+}
+
+.section3 {
+  margin: 0 auto;
+  width: 90%;
+}
+.section3div {
+  font-size: 1.2rem;
+  margin: 0 0 2rem 0;
+  line-height: 1.5rem;
+}
+.footer {
+  background-image: url("../public/images/fulls/mountain.jpg");
+  background-position-y: 64%;
+  height: 15vh;
+}
+@media (max-width: 850px) {
+  .row {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+  .leftContainer {
+    position: relative;
+    width: 100%;
+    padding-right: 0;
+    padding-top: 8%;
+  }
+  .leftContainer h2 {
+    width: 80%;
+    padding-top: 5%;
+    font-size: 2rem;
+    margin: 0 auto 5% auto;
+  }
+  .imageAvatar {
+    border-radius: 100%;
+    width: 20%;
+  }
+  .icons {
+    height: 100%;
+    /* margin-top: 5%; */
+    padding-left: 0;
+    text-align: right;
+    justify-content: space-evenly;
+  }
+  .right {
+    width: 100%;
+    text-align: center;
+  }
+  .section1 {
+    text-align: center;
+    width: 90%;
+    margin: 11% auto;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .left {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+  .leftContainer {
+    position: relative;
+    width: 100%;
+    padding-right: 0;
+    padding-top: 8%;
+  }
+  .leftContainer h2 {
+    width: 80%;
+    padding-top: 5%;
+    font-size: 2rem;
+
+    margin: 0 auto 5% auto;
+  }
+  .imageAvatar {
+    border-radius: 100%;
+    width: 20%;
+  }
+  .icons {
+    padding-left: 0;
+    text-align: right;
+    justify-content: space-evenly;
+  }
+  .right {
+    width: 100%;
+  }
+  .section1 {
+    width: 90%;
+    margin: 11% auto;
+  }
+  .row2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .projects {
+    width: 90%;
+    height: 35%;
+    margin: 0 auto;
+
+    padding-bottom: 3rem;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 430px) {
+  .leftContainer h2 {
+    width: 80%;
+    padding-top: 5%;
+    font-size: 1.5rem;
+    margin: 0 auto 5% auto;
+  }
+  .section1 h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .section1 div {
+    font-size: 1rem;
+  }
+  .section2 h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .section2 h3 {
+    font-weight: 400;
+  }
+  .section3 h2 {
+    font-weight: 500;
+  }
+  .footer {
+    background-position-y: 61%;
+    background-position-x: 40%;
+    height: 15vh;
   }
 }
