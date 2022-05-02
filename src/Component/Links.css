@@ -1,0 +1,50 @@
+.icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60%;
+  text-align: right;
+}
+
+.label {
+  text-decoration: none;
+  color: black;
+}
+.github {
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../../public/images/thumbs/GitHub-Mark-32px.png");
+}
+.email {
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  background-position: center;
+  background-image: url("../../public/images/thumbs/email.png");
+}
+.linkedin {
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+
+  background-image: url("../../public/images/thumbs/linkedin.png");
+}
+@media (max-width: 850px) {
+  .icons {
+    height: 100%;
+    padding-left: 0;
+    text-align: right;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 700px) {
+  .icons {
+    padding-left: 0;
+    text-align: right;
+    justify-content: space-evenly;
+  }
+}
