@@ -14,29 +14,6 @@ export const ContactUs = () => {
     formState: { errors },
   } = useForm();
 
-  /*   const onSubmit = (data) => console.log(data);
-  console.log(errors); */
-
-  /*  const sendEmail = (e) => {
-    e.preventDefault();
-
-     emailjs
-      .sendForm(
-        `${process.env.REACT_APP_SERVICE_ID}`,
-        `${process.env.REACT_APP_TEMPLATE_ID}`,
-        form.current,
-        `${process.env.REACT_APP_USER_ID}`
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    form.current.reset(); */
-
   const onSubmit = (data, e) => {
     sendEmail(data, e);
   };
@@ -122,11 +99,11 @@ export const ContactUs = () => {
       />
 
       <ReCAPTCHA
-        style={{ margin: "2% auto" }}
         className="g-recaptcha"
         sitekey={`${process.env.REACT_APP_RECAPTCHA_SITEKEY}`}
         onChange={onChangeHandle}
       />
+
       <input disabled={!isVerified} type="submit" className="input marginBot" />
     </form>
   );

@@ -20,7 +20,7 @@ const useScreenWidth = () => {
   useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
       setScreenWidth(window.innerWidth);
-    }, 1000);
+    }, 500);
 
     window.addEventListener("resize", debouncedHandleResize);
 
