@@ -1,0 +1,62 @@
+@import "./breakpoints.scss";
+.section2 {
+  margin: 0 auto;
+  width: 90%;
+}
+.section2 h2 {
+  font-size: 2rem;
+}
+.section2 h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.row2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.projects {
+  width: 48%;
+  height: 25%;
+  margin: 2rem 0 1rem 0;
+  padding: 0;
+  background-repeat: no-repeat;
+}
+.image {
+  cursor: pointer;
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+  border-radius: 0.35rem;
+}
+
+.img:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+  .row2 {
+    flex-direction: column;
+  }
+  .projects {
+    width: 90%;
+    height: 35%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .section2 h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .section2 h3 {
+    font-weight: 400;
+  }
+}

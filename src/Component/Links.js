@@ -1,5 +1,5 @@
 import React from "react";
-import "./Links.css";
+import "./styles/Links.css";
 
 const Links = () => {
   return (

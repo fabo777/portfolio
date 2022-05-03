@@ -1,6 +1,6 @@
 import React from "react";
 import MarioFabijanecCV from "../Mario Fabijanec CV.pdf";
-import "./Section1.css";
+import "./styles/Section1.css";
 const Section1 = () => {
   return (
     <div className="section1">

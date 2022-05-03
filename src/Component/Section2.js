@@ -1,6 +1,6 @@
 import React from "react";
 import myProjects from "../Data/myProjects.json";
-import "./Section2.css";
+import "./styles/Section2.css";
 
 const Section2 = ({ handleOpen, setGetID }) => {
   return (

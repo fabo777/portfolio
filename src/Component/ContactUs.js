@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
-import "./ContactUs.css";
+import "./styles/ContactUs.css";
 
 export const ContactUs = () => {
   const [isVerified, setIsVerified] = useState(false);
