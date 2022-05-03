@@ -1,5 +1,5 @@
 import React from "react";
-import "./Section3.css";
+import "./styles/Section3.css";
 import { ContactUs } from "./ContactUs";
 
 const Section3 = () => {

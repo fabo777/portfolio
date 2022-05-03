@@ -6,14 +6,16 @@
   text-align: center;
   margin-bottom: 2%;
 }
+
 .input {
   margin: 2% 0 2% 0;
   padding: 1% 0 1% 0;
-  background: #f7f7f7df;
+  background: rgba(247, 247, 247, 0.8745098039);
   border-radius: 0.35em;
   border: none;
   font-family: "Roboto", sans-serif;
 }
+
 .emailDiv {
   margin: 1rem 0 0 0;
   padding: 1% 0 1% 0;
@@ -35,9 +37,11 @@
 .marginBot {
   padding: 1% 0 1% 0;
 }
+
 .ErrorMsg {
   color: red;
 }
+
 .g-recaptcha {
   margin: 2% auto;
 }
@@ -46,4 +50,4 @@
   .form {
     width: 100%;
   }
-}
+}/*# sourceMappingURL=ContactUs.css.map */

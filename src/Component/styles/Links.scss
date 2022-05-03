@@ -1,0 +1,44 @@
+@import "./breakpoints.scss";
+
+@mixin iconSize {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icons {
+  list-style-type: none;
+  @include flexAndJust(space-between);
+  align-items: center;
+  padding-left: 60%;
+  text-align: right;
+}
+
+.label {
+  text-decoration: none;
+  color: black;
+}
+.github {
+  @include iconSize();
+  background-repeat: no-repeat;
+  background-image: url("../../../public/images/thumbs/GitHub-Mark-32px.png");
+}
+.email {
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  background-position: center;
+  background-image: url("../../../public/images/thumbs/email.png");
+}
+.linkedin {
+  @include iconSize();
+  background-repeat: no-repeat;
+  background-image: url("../../../public/images/thumbs/linkedin.png");
+}
+@include l {
+  .icons {
+    height: 100%;
+    padding-left: 0;
+    justify-content: space-evenly;
+  }
+}

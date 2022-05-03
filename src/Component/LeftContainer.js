@@ -1,7 +1,7 @@
 import React from "react";
 import Links from "./Links";
 import useScreenWidth from "./useScreenWidth";
-import "./LeftContainer.css";
+import "./styles/LeftContainer.css";
 
 const LeftContainer = () => {
   const { ScreenWidth } = useScreenWidth();

@@ -1,9 +1,9 @@
+@import "./breakpoints.scss";
 .left {
   width: 30%;
   height: auto;
   text-align: right;
-
-  background-image: url("../../public/images/fulls/mountain.jpg");
+  background-image: url("../../../public/images/fulls/mountain.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll, scroll;
@@ -31,46 +31,23 @@
   border-radius: 100%;
   width: 35%;
 }
-@media (max-width: 850px) {
-  .left {
-    width: 100%;
-    text-align: center;
-    height: auto;
-  }
-  .leftContainer {
-    position: relative;
-    width: 100%;
-    padding-right: 0;
-    padding-top: 8%;
-  }
-  .leftContainer h2 {
-    width: 80%;
-    padding-top: 5%;
-    font-size: 2rem;
-    margin: 0 auto 5% auto;
-  }
-  .imageAvatar {
-    border-radius: 100%;
-    width: 20%;
-  }
-}
-@media (max-width: 700px) {
-  .left {
-    width: 100%;
-    text-align: center;
-    height: auto;
-  }
-  .leftContainer {
-    position: relative;
-    width: 100%;
-    padding-right: 0;
-    padding-top: 8%;
-  }
-  .leftContainer h2 {
-    width: 80%;
-    padding-top: 5%;
-    font-size: 2rem;
 
+@include l {
+  .left {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+  .leftContainer {
+    position: relative;
+    width: 100%;
+    padding-right: 0;
+    padding-top: 8%;
+  }
+  .leftContainer h2 {
+    width: 80%;
+    padding-top: 5%;
+    font-size: 2rem;
     margin: 0 auto 5% auto;
   }
   .imageAvatar {
@@ -78,11 +55,9 @@
     width: 20%;
   }
 }
-@media (max-width: 430px) {
+
+@include xs {
   .leftContainer h2 {
-    width: 80%;
-    padding-top: 5%;
     font-size: 1.5rem;
-    margin: 0 auto 5% auto;
   }
 }
