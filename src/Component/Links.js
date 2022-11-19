@@ -9,11 +9,11 @@ const Links = () => {
           <div className="github"></div>
         </a>
       </li>
-      <li>
+      {/* <li>
         <a href="#section3" className="envelope">
           <div className="email"></div>
         </a>
-      </li>
+      </li> */}
       <li>
         <a
           href="https://www.linkedin.com/in/mario-fabijanec-852745238/"

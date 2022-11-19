@@ -32,8 +32,8 @@ const App = () => {
             <Section1 />
             <hr className="line"></hr>
             <Section2 handleOpen={handleOpen} setGetID={setGetID} />
-            <hr className="line"></hr>
-            <Section3 />
+            {/*   <hr className="line"></hr> */}
+            {/*  <Section3 /> */}
           </div>
         </div>
       </div>
