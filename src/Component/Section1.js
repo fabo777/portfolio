@@ -6,10 +6,11 @@ const Section1 = () => {
     <div className="section1">
       <h1>Full stack developer</h1>
       <div>
-        If you need a skilled full-stack developer hungry for new challenges,
-        you've found the right person. I'm well-versed in HTML, CSS, JavaScript,
-        React, Vue.js, PHP, and MySQL. I look forward to the
-        opportunity to collaborate and deliver exceptional results.
+        I'm a passionate full-stack developer always seeking fresh challenges
+        and opportunities to innovate. With a strong foundation in HTML, CSS,
+        JavaScript, React, Vue.js, PHP, and MySQL, I bring a
+        wealth of technical expertise to the table. Let's team up and create
+        something extraordinary together!
       </div>
       <a
         href={MarioFabijanecCV}
