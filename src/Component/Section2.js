@@ -10,7 +10,7 @@ const Section2 = ({ handleOpen, setGetID }) => {
         {myProjects.map((project) => {
           return (
             <div key={project.id} className="projects">
-              <a href="#" className="image">
+              <div>
                 <img
                   onClick={() => {
                     handleOpen(project.name);
@@ -20,7 +20,7 @@ const Section2 = ({ handleOpen, setGetID }) => {
                   src={`images/projects/${project.name}.PNG`}
                   alt=""
                 />
-              </a>
+              </div>
 
               <h3>{project.name}</h3>
               <p>{project.msg}</p>
