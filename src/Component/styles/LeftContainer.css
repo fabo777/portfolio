@@ -1,0 +1,66 @@
+.left {
+  width: 30%;
+  height: auto;
+  text-align: right;
+  background-image: url("../../../public/images/fulls/mountain.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll, scroll;
+  background-size: auto, 150%;
+  color: rgb(197, 93, 93);
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  width: 30%;
+  height: 95%;
+  padding-right: 5%;
+  padding-top: 8%;
+}
+
+.leftContainer h2 {
+  width: 90%;
+  margin: 2% 0 0 10%;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.imageAvatar {
+  border-radius: 100%;
+  width: 35%;
+}
+
+@media (max-width: 850px) {
+  .left {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+
+  .leftContainer {
+    position: relative;
+    width: 100%;
+    padding-right: 0;
+    padding-top: 8%;
+  }
+
+  .leftContainer h2 {
+    width: 80%;
+    padding-top: 5%;
+    font-size: 2rem;
+    margin: 0 auto 5% auto;
+  }
+
+  .imageAvatar {
+    border-radius: 100%;
+    width: 20%;
+  }
+}
+@media (max-width: 430px) {
+  .leftContainer h2 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=LeftContainer.css.map */

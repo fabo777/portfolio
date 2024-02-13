@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  overflow: auto;
+  justify-content: space-around;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(215, 213, 213);
+  width: 70%;
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  background-color: black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-image: url("../public/images/fulls/mountain.jpg");
+  background-position-y: 64%;
+  height: 15vh;
+}
+
+@media (max-width: 850px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .right {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
+@media (max-width: 430px) {
+  .footer {
+    background-position-y: 61%;
+    background-position-x: 40%;
+    height: 15vh;
+  }
+}/*# sourceMappingURL=App.css.map */

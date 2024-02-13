@@ -1,0 +1,54 @@
+@import "./breakpoints.scss";
+@mixin paddingTandB {
+  padding: 1% 0 1% 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.input {
+  margin: 2% 0 2% 0;
+  @include paddingTandB();
+  background: #f7f7f7df;
+  border-radius: 0.35em;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+.emailDiv {
+  margin: 1rem 0 0 0;
+  @include paddingTandB();
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.input2 {
+  width: 45%;
+  @include paddingTandB();
+  background: #f7f7f7;
+  border-radius: 0.35em;
+  border: none;
+  margin-bottom: 2%;
+}
+
+.marginBot {
+  @include paddingTandB();
+}
+.ErrorMsg {
+  color: red;
+}
+.g-recaptcha {
+  margin: 2% auto;
+}
+
+@include s {
+  .form {
+    width: 100%;
+  }
+}

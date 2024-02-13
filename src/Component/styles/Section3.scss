@@ -1,0 +1,15 @@
+@import "./breakpoints.scss";
+.section3 {
+  margin: 0 auto;
+  width: 90%;
+}
+.section3div {
+  font-size: 1.2rem;
+  margin: 0 0 2rem 0;
+  line-height: 1.5rem;
+}
+@include l {
+  .section3 h2 {
+    font-weight: 500;
+  }
+}
