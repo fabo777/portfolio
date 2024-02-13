@@ -4,12 +4,12 @@ import "./styles/Section1.css";
 const Section1 = () => {
   return (
     <div className="section1">
-      <h1>Self-taught front-end developer</h1>
+      <h1>Full stack developer</h1>
       <div>
-        If you are looking for a new front-end junior developer, with a high
-        drive to learn new skills and improve existing ones, you are in the
-        right place. I have a solid knowledge in HTML, CSS, JavaScript, React
-        and Redux.
+        If you need a skilled full-stack developer hungry for new challenges,
+        you've found the right person. I'm well-versed in HTML, CSS, JavaScript,
+        React, Vue.js, PHP, and MySQL. I look forward to the
+        opportunity to collaborate and deliver exceptional results.
       </div>
       <a
         href={MarioFabijanecCV}
