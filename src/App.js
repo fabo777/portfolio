@@ -5,7 +5,7 @@ import useScreenWidth from "./Component/useScreenWidth";
 import LeftContainer from "./Component/LeftContainer";
 import Section1 from "./Component/Section1";
 import Section2 from "./Component/Section2";
-import Section3 from "./Component/Section3";
+//import Section3 from "./Component/Section3";
 import BasicModal from "./Component/BasicModal";
 import Links from "./Component/Links";
 
