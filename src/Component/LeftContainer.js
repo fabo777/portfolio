@@ -11,7 +11,7 @@ const LeftContainer = () => {
         <div>
           <img className="imageAvatar" src="images/avatar2.PNG" alt="" />
           <h2>
-            Hi, my name is Mario Fabijanec and I am a full stack developer from Zagreb.
+            Hi, my name is Mario Fabijanec and I am a web developer from Zagreb.
             Welcome to my portfolio.
           </h2>
         </div>
