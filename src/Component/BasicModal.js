@@ -20,13 +20,13 @@ export default function BasicModal({
 }) {
   const prevPic = () => {
     if (getID === 0) {
-      return setGetID(3);
+      return setGetID(5);
     } else {
       setGetID(getID - 1);
     }
   };
   const nextPic = () => {
-    if (getID === 3) {
+    if (getID === 5) {
       return setGetID(0);
     } else {
       setGetID(getID + 1);
@@ -57,19 +57,22 @@ export default function BasicModal({
             </div>
           </div>
           <div className="modalBtns">
-            <button
-              className="modalBtn"
-              onClick={() => window.open(`${myProjects[getID].link}`)}
-            >
-              View in action
-            </button>
-
-            <button
-              className="modalBtn"
-              onClick={() => window.open(`${myProjects[getID].srcCode}`)}
-            >
-              View source code
-            </button>
+            {myProjects[getID].link && (
+              <button
+                className="modalBtn"
+                onClick={() => window.open(`${myProjects[getID].link}`)}
+              >
+                View in action
+              </button>
+            )}
+            {myProjects[getID].srcCode && (
+              <button
+                className="modalBtn"
+                onClick={() => window.open(`${myProjects[getID].srcCode}`)}
+              >
+                View source code
+              </button>
+            )}
           </div>
         </Box>
       </Modal>

@@ -1,27 +1,41 @@
-[
+  [ 
+    {
+      "id": 0,
+      "name": "SPA",
+      "link": "https://scribehow.com/shared/Guide_on_how_this_booking_app_works__zUHg7YAnR0edN_m733Hxlg",
+      "msg": "A fully responsive full stack project, created with Vue and PHP in Laravel, featuring a MySQL database. The public site is completely customizable based on information provided in the admin panel. The core functionality is designed for small businesses(the owner would be the admin), who want to manage personal booking for their apartments. This allows them to update and change their site information however and whenever they want, ensuring flexibility and ease of use. You can see how it works by following the link: <a href='https://scribehow.com/shared/Guide_to_Updating_Apartment_Details_on_Booking_Website__zUHg7YAnR0edN_m733Hxlg' target='_blank'>Guide on how this booking app works</a>.",
+      "srcCode": ""
+    },
   {
-    "id": 0,
+    "id": 1,
+    "name": "Frontend",
+    "link": "https://apartmani-vesna-vir.netlify.app",
+    "msg": "Full responsive multi language page for business promoting.",
+    "srcCode": "https://github.com/fabo777/Vir2024"
+  },
+  {
+    "id": 2,
     "name": "Vir",
     "link": "https://apartmani-vesna-vir.com.hr/",
-    "msg": "Full responsive multi language page with form validation, ReCaptcha, useContext and some animations",
+    "msg": "Full responsive multi language page with form validation, ReCaptcha, useContext and some animations.",
     "srcCode": "https://github.com/fabo777/Vir"
   },
   {
-    "id": 1,
+    "id": 3,
     "name": "Movie",
     "link": "https://boring-davinci-769188.netlify.app/",
     "msg": "Full responsive, watch list app with Google Authenticator and Material Ui Modals.",
     "srcCode": "https://github.com/fabo777/MOVIE-APP-master"
   },
   {
-    "id": 2,
+    "id": 4,
     "name": "Norway",
     "link": "https://fervent-easley-53d82c.netlify.app/",
     "msg": "Full responsive,small page inspired by friends design.",
     "srcCode": "https://github.com/fabo777/norway"
   },
   {
-    "id": 3,
+    "id": 5,
     "name": "Višnjan",
     "link": "https://amazing-lovelace-9deaed.netlify.app/",
     "msg": "Just a landing page inspired by friends design.",

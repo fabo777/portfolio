@@ -23,7 +23,7 @@ const Section2 = ({ handleOpen, setGetID }) => {
               </div>
 
               <h3>{project.name}</h3>
-              <p>{project.msg}</p>
+              <p dangerouslySetInnerHTML={{ __html: project.msg }}></p>
             </div>
           );
         })}
