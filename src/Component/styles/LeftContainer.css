@@ -1,13 +1,14 @@
 .left {
   width: 30%;
-  height: auto;
+  min-height: 100vh; /* Ensure the left container is at least the height of the viewport */
   text-align: right;
   background-image: url("../../../public/images/fulls/mountain.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: scroll, scroll;
-  background-size: auto, 150%;
+  background-attachment: scroll; /* This allows the background to scroll with the content */
+  background-size: cover; /* Ensure the background image covers the entire container */
   color: rgb(197, 93, 93);
+  overflow: hidden; /* Ensure the content doesn't overflow */
 }
 
 .leftContainer {
@@ -38,6 +39,7 @@
     width: 100%;
     text-align: center;
     height: auto;
+    min-height: auto;
   }
 
   .leftContainer {

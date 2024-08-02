@@ -85,8 +85,15 @@ ul {
 }
 @media (max-width: 430px) {
   .footer {
-    background-position-y: 61%;
+    background-position-y: 74%;
     background-position-x: 40%;
     height: 15vh;
   }
-}/*# sourceMappingURL=App.css.map */
+
+}
+@media (max-width: 850px) {
+  .footer {
+    background-position-y: 74%;
+    background-position-x: 40%;
+    height: 15vh;
+  }}
