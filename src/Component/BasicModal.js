@@ -1,81 +1,88 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
-import Modal from "@mui/material/Modal";
-import "./styles/BasicModal.css";
+import React, { useState, useEffect } from "react";
+import { Dialog } from "primereact/dialog";
+import { Galleria } from "primereact/galleria";
+import "./styles/BasicModal.css"; // Ensure this file contains necessary styles
 
-const style = {
-  transform: "translate(-50%, -50%)",
-  outerHeight: "60%",
-  bgcolor: "background.paper",
-  boxShadow: 24,
-  p: 0,
+const itemTemplate = (item) => {
+  return (
+    <img
+      src={item.itemImageSrc}
+      alt={item.alt}
+      style={{
+        width: "100%",
+        height: "auto",
+        maxHeight: "calc(80vh - 150px)", // Adjust this value as needed
+        objectFit: "contain",
+        display: "block",
+      }}
+    />
+  );
 };
 
-export default function BasicModal({
-  open,
-  handleClose,
-  setGetID,
-  getID,
-  myProjects,
-}) {
-  const prevPic = () => {
-    if (getID === 0) {
-      return setGetID(5);
-    } else {
-      setGetID(getID - 1);
-    }
-  };
-  const nextPic = () => {
-    if (getID === 5) {
-      return setGetID(0);
-    } else {
-      setGetID(getID + 1);
-    }
-  };
-  return (
-    <div className="modal">
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style} className="box">
-          <div>
-            <div
-              className="img2"
-              style={{
-                backgroundImage: `url(images/projects/${myProjects[getID].name}-full.PNG)`,
-              }}
-            >
-              <button onClick={() => prevPic()} className="gumb">
-                <div className="backIcon"></div>
-              </button>
-              <button onClick={() => nextPic()} className="gumb">
-                <div className="nextIcon"></div>
-              </button>
-            </div>
-          </div>
-          <div className="modalBtns">
-            {myProjects[getID].link && (
-              <button
-                className="modalBtn"
-                onClick={() => window.open(`${myProjects[getID].link}`)}
-              >
-                View in action
-              </button>
-            )}
-            {myProjects[getID].srcCode && (
-              <button
-                className="modalBtn"
-                onClick={() => window.open(`${myProjects[getID].srcCode}`)}
-              >
-                View source code
-              </button>
-            )}
-          </div>
-        </Box>
-      </Modal>
+export default function BasicModal({ open, handleClose, getID, myProjects }) {
+  const [activeIndex, setActiveIndex] = useState(getID);
+
+  useEffect(() => {
+    setActiveIndex(getID); // Sync activeIndex with getID prop
+  }, [getID]);
+
+  const images = myProjects.map((project) => ({
+    itemImageSrc: `images/projects/${project.name}-full.PNG`,
+    alt: project.name,
+  }));
+
+  const header = (
+    <div style={{ textAlign: "center", margin: "0", padding: "0" }}>
+      {" "}
+      {/* Reduced vertical margin */}
+      <div>{myProjects[activeIndex].name}</div>
     </div>
+  );
+
+  return (
+    <Dialog
+      header={header}
+      visible={open}
+      style={{
+        width: "90vw",
+        maxWidth: "1200px",
+        height: "90vh",
+        maxHeight: "90vh",
+      }}
+      onHide={handleClose}
+      footer={
+        <div className="modalBtns">
+          {myProjects[activeIndex].link && (
+            <button
+              className="modalBtn"
+              onClick={() => window.open(`${myProjects[activeIndex].link}`)}
+              style={{ margin: "0 5px" }}
+            >
+              View in action
+            </button>
+          )}
+          {myProjects[activeIndex].srcCode && (
+            <button
+              className="modalBtn"
+              onClick={() => window.open(`${myProjects[activeIndex].srcCode}`)}
+              style={{ margin: "0 5px" }}
+            >
+              View source code
+            </button>
+          )}
+        </div>
+      }
+    >
+      <Galleria
+        value={images}
+        style={{ width: "100%", height: "calc(100% - 300px)" }} // Adjust height to leave room for footer
+        changeItemOnIndicatorHover
+        showIndicators
+        showThumbnails={false}
+        item={itemTemplate}
+        activeIndex={activeIndex}
+        onItemChange={(e) => setActiveIndex(e.index)} // Update activeIndex on item change
+      />
+    </Dialog>
   );
 }

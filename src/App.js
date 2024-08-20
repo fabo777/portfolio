@@ -30,6 +30,7 @@ const App = () => {
           <LeftContainer />
           <div className="right">
             <Section1 />
+
             <hr className="line"></hr>
             <Section2 handleOpen={handleOpen} setGetID={setGetID} />
             {/*   <hr className="line"></hr> */}
