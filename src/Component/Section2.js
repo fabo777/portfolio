@@ -5,7 +5,7 @@ import "./styles/Section2.css";
 const Section2 = ({ handleOpen, setGetID }) => {
   return (
     <div className="section2">
-      <h2>Recent work</h2>
+      <h2>My Work: A Glimpse Through the Years</h2>
       <div className="row2">
         {myProjects.map((project) => {
           return (

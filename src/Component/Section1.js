@@ -1,6 +1,8 @@
 import React from "react";
 import MarioFabijanecCV from "../Mario Fabijanec CV.pdf";
 import "./styles/Section1.css";
+import { Button } from "primereact/button";
+
 const Section1 = () => {
   return (
     <div className="section1">
@@ -18,7 +20,7 @@ const Section1 = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <button>Download CV</button>
+        <Button>Download CV</Button>
       </a>
     </div>
   );

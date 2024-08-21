@@ -3,59 +3,27 @@
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  padding: 0.5rem 0 0.5rem 0;
-  background-color: rgb(215, 213, 213);
+  margin-top: 1rem;
 }
-
-.modalBtn {
-  background-color: #46a8bc;
-  border: none;
-  border-radius: 0.25rem;
-  width: 25%;
-  padding: 2% 4%;
-  cursor: pointer;
-  color: white;
-  font-size: 1rem;
-  font-weight: 500;
+.centerImage{
+  width: 100% !important;
+ display: flex;
+ justify-content: center;
 }
-
-.img2 {
-  width: 100%;
-  height: 80vh;
-  background-size: 100% 100%;
-  background-position: center top;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-between;
+.p-dialog .p-dialog-header {
+  padding: 0.1rem;
 }
-
-.gumb {
-  background: transparent;
-  width: 100%;
-  border: none;
-  cursor: pointer;
+@media (max-width: 1200px) {
+  .p-dialog {
+    width: 50vw !important; 
+    max-width: none !important; 
+    height: auto; 
+  }
 }
-
-
-
 @media (max-width: 600px) {
   .p-dialog {
-    width: 95vw !important; /* Increase width for mobile */
-    max-width: none !important; /* Remove max-width */
-    height: 50vh !important; /* Ensure height is appropriate */
-  }
-
-  .p-dialog-header {
-    padding: 10px !important; /* Adjust padding */
-  }
-
-  .p-dialog-footer {
-    padding: 10px !important; /* Adjust padding */
-  }
-
- 
-
-  .modalBtn {
-    margin: 5px 0; /* Adjust margin for buttons */
+    width: 90vw !important; 
+    max-width: none !important; 
+    height: auto; 
   }
 }
