@@ -10,8 +10,17 @@
  display: flex;
  justify-content: center;
 }
+
+.fakeHeaderOuter{
+  text-align: center; margin: 0 auto;
+
+}
+.fakeHeader{
+  margin-top: 0;font-weight: 700;
+}
 .p-dialog .p-dialog-header {
   padding: 0.1rem;
+
 }
 @media (max-width: 1200px) {
   .p-dialog {

@@ -32,6 +32,7 @@
 .imageAvatar {
   border-radius: 100%;
   width: 35%;
+  
 }
 
 @media (max-width: 850px) {

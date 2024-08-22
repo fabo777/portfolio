@@ -1,6 +1,7 @@
 import React from "react";
 import myProjects from "../Data/myProjects.json";
 import "./styles/Section2.css";
+import { Image } from "primereact/image";
 
 const Section2 = ({ handleOpen, setGetID }) => {
   return (
@@ -11,14 +12,24 @@ const Section2 = ({ handleOpen, setGetID }) => {
           return (
             <div key={project.id} className="projects">
               <div>
-                <img
+                {/*   <img 
                   onClick={() => {
                     handleOpen(project.name);
                     setGetID(project.id);
                   }}
                   className="img"
-                  src={`images/projects/${project.name}.PNG`}
+                  src={`images/projects/${project.name}-FULL.PNG`}
                   alt=""
+                /> */}
+                <Image
+                  src={`images/projects/${project.name}-FULL.PNG`}
+                  alt="Image"
+                  width="100%"
+                  onClick={() => {
+                    handleOpen(project.name);
+                    setGetID(project.id);
+                  }}
+                  loading="lazy"
                 />
               </div>
 
