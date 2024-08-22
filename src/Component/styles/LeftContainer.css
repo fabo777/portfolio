@@ -32,6 +32,7 @@
 .imageAvatar {
   border-radius: 100%;
   width: 35%;
+  
 }
 
 @media (max-width: 850px) {
@@ -65,4 +66,4 @@
   .leftContainer h2 {
     font-size: 1.5rem;
   }
-}/*# sourceMappingURL=LeftContainer.css.map */
+}

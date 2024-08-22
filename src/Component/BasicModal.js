@@ -1,81 +1,44 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
-import Modal from "@mui/material/Modal";
+import React from "react";
 import "./styles/BasicModal.css";
+import { Dialog } from "primereact/dialog";
+import { Button } from "primereact/button";
+import { Image } from "primereact/image";
 
-const style = {
-  transform: "translate(-50%, -50%)",
-  outerHeight: "60%",
-  bgcolor: "background.paper",
-  boxShadow: 24,
-  p: 0,
-};
-
-export default function BasicModal({
-  open,
-  handleClose,
-  setGetID,
-  getID,
-  myProjects,
-}) {
-  const prevPic = () => {
-    if (getID === 0) {
-      return setGetID(5);
-    } else {
-      setGetID(getID - 1);
-    }
-  };
-  const nextPic = () => {
-    if (getID === 5) {
-      return setGetID(0);
-    } else {
-      setGetID(getID + 1);
-    }
-  };
+export default function BasicModal({ open, handleClose, getID, myProjects }) {
   return (
-    <div className="modal">
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style} className="box">
-          <div>
-            <div
-              className="img2"
-              style={{
-                backgroundImage: `url(images/projects/${myProjects[getID].name}-full.PNG)`,
-              }}
-            >
-              <button onClick={() => prevPic()} className="gumb">
-                <div className="backIcon"></div>
-              </button>
-              <button onClick={() => nextPic()} className="gumb">
-                <div className="nextIcon"></div>
-              </button>
-            </div>
-          </div>
-          <div className="modalBtns">
-            {myProjects[getID].link && (
-              <button
-                className="modalBtn"
-                onClick={() => window.open(`${myProjects[getID].link}`)}
-              >
-                View in action
-              </button>
-            )}
-            {myProjects[getID].srcCode && (
-              <button
-                className="modalBtn"
-                onClick={() => window.open(`${myProjects[getID].srcCode}`)}
-              >
-                View source code
-              </button>
-            )}
-          </div>
-        </Box>
-      </Modal>
-    </div>
+    <Dialog visible={open} style={{ width: "30vw" }} onHide={handleClose}>
+      <div className="fakeHeaderOuter">
+        <h2 className="fakeHeader">{myProjects[getID].name}</h2>
+      </div>
+      <div className="centerImage">
+        <Image
+          src={`images/projects/${myProjects[getID].name}-FULL.PNG`}
+          alt="Image"
+          width="100%"
+          preview
+          loading="lazy"
+        />
+      </div>
+      <div className="modalBtns">
+        {myProjects[getID].link && (
+          <Button
+            severity="secondary"
+            style={{ backgroundColor: "black" }}
+            onClick={() => window.open(`${myProjects[getID].link}`)}
+          >
+            View in action
+          </Button>
+        )}
+        {myProjects[getID].srcCode && (
+          <Button
+            severity="secondary"
+            style={{ backgroundColor: "black" }}
+            onClick={() => window.open(`${myProjects[getID].srcCode}`)}
+          >
+            View source code
+          </Button>
+        )}
+      </div>
+    </Dialog>
   );
 }
