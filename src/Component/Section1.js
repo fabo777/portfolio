@@ -14,9 +14,9 @@ const Section1 = () => {
         expertise to the table. Let's team up and create something extraordinary
         together! */}
         <p>
-          I'm a passionate web developer always seeking fresh challenges and
-          opportunities to innovate. With a strong foundation in HTML, CSS,
-          JavaScript, React, Vue.js, PHP and MySQL. I leverage these
+          I'm a passionate web developer with a strong foundation in HTML, CSS,
+          JavaScript, React, Vue.js, PHP and MySQL who is always seeking fresh
+          challenges and opportunities to innovate. I leverage these
           technologies, including Laravel, to create robust and scalable
           solutions.
         </p>
