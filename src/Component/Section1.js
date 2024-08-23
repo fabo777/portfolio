@@ -8,17 +8,11 @@ const Section1 = () => {
     <div className="section1">
       <h1>Web developer</h1>
       <div style={{ textAlign: "left" }}>
-        {/*   I'm a passionate web developer always seeking fresh challenges and
-        opportunities to innovate. With a strong foundation in HTML, CSS,
-        JavaScript, React, Vue.js, PHP, and MySQL, I bring a wealth of technical
-        expertise to the table. Let's team up and create something extraordinary
-        together! */}
         <p>
-          I'm a passionate web developer with a strong foundation in HTML, CSS,
-          JavaScript, React, Vue.js, PHP and MySQL who is always seeking fresh
-          challenges and opportunities to innovate. I leverage these
-          technologies, including Laravel, to create robust and scalable
-          solutions.
+          I’m a passionate web developer with expertise in HTML, CSS,
+          JavaScript, React, Vue.js, PHP, Laravel, and MySQL. Constantly driven
+          by new challenges, I use these technologies to craft innovative,
+          robust, and scalable solutions.
         </p>
         <p>
           I led and managed small to medium-sized projects from planning through
