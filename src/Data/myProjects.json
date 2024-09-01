@@ -3,7 +3,7 @@
       "id": 0,
       "name": "SPA",
       "link": "https://scribehow.com/shared/Guide_on_how_this_booking_app_works__zUHg7YAnR0edN_m733Hxlg",
-      "msg": "A fully responsive full stack project, created with Vue and PHP in Laravel, featuring a MySQL database. The public site is completely customizable based on information provided in the admin panel. The core functionality is designed for small businesses(the owner would be the admin), who want to manage personal booking for their apartments. This allows them to update and change their site information and theme however and whenever they want, ensuring flexibility and ease of use.",
+      "msg": "A fully responsive full stack project, created with Vue and PHP in Laravel, featuring a MySQL database. The public site is completely customizable based on information provided in the admin panel. The core functionality is designed for small businesses(the owner would be the admin), who want to manage personal booking for their apartments. This allows them to update and change their site information and theme however and whenever they want, ensuring flexibility and ease of use. I won't be sharing the source code for this project publicly because it's already a market-ready product.",
       "srcCode": ""
     },
   {
