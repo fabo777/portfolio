@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import myProjects from "../Data/myProjects.json";
 import "./styles/Section2.css";
 import { Image } from "primereact/image";
+import BasicModal from "./BasicModal";
+const Section2 = (/* { handleOpen, setGetID } */) => {
+  const [open, setOpen] = React.useState(false);
+  const [getID, setGetID] = useState(0);
+  const handleOpen = () => {
+    setTimeout(() => {
+      setOpen(true);
+    }, 300);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
 
-const Section2 = ({ handleOpen, setGetID }) => {
   return (
     <div className="section2">
       <h2>My Work: A Glimpse Through the Years</h2>
@@ -12,15 +23,6 @@ const Section2 = ({ handleOpen, setGetID }) => {
           return (
             <div key={project.id} className="projects">
               <div>
-                {/*   <img 
-                  onClick={() => {
-                    handleOpen(project.name);
-                    setGetID(project.id);
-                  }}
-                  className="img"
-                  src={`images/projects/${project.name}-FULL.PNG`}
-                  alt=""
-                /> */}
                 <Image
                   src={`images/projects/${project.name}-FULL.PNG`}
                   alt="Image"
@@ -39,6 +41,13 @@ const Section2 = ({ handleOpen, setGetID }) => {
           );
         })}
       </div>
+      <BasicModal
+        open={open}
+        handleClose={handleClose}
+        getID={getID}
+        setGetID={setGetID}
+        myProjects={myProjects}
+      />
     </div>
   );
 };

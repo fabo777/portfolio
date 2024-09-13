@@ -1,38 +1,49 @@
-
 .modalBtns {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   margin-top: 1rem;
 }
-.centerImage{
-  width: 100% !important;
- display: flex;
- justify-content: center;
+
+.centerSlider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.fakeHeaderOuter{
-  text-align: center; margin: 0 auto;
+.fakeHeaderOuter {
+  text-align: center;
+  margin: 0 auto;
+}
 
+.fakeHeader {
+  margin-top: 0;
+  font-weight: 700;
 }
-.fakeHeader{
-  margin-top: 0;font-weight: 700;
-}
+
 .p-dialog .p-dialog-header {
   padding: 0.1rem;
-
 }
+
+.sliderImage {
+  width: 100%;
+  height: auto;
+  max-height: 55vh; 
+  object-fit: cover; 
+}
+
 @media (max-width: 1200px) {
   .p-dialog {
-    width: 50vw !important; 
-    max-width: none !important; 
-    height: auto; 
+    width: 50vw !important;
+    max-width: none !important;
+    height: auto;
   }
 }
+
 @media (max-width: 600px) {
   .p-dialog {
-    width: 90vw !important; 
-    max-width: none !important; 
-    height: auto; 
+    width: 90vw !important;
+    max-width: none !important;
+    height: auto;
   }
 }

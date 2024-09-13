@@ -19,6 +19,7 @@
     "@jridgewell/sourcemap-codec": "^1.5.0",
     "@mui/material": "^5.5.0",
     "@rollup/plugin-terser": "^0.4.4",
+    "@splidejs/react-splide": "^0.7.12",
     "@svgr/plugin-svgo": "^8.1.0",
     "glob": "^9.0.0",
     "primeflex": "^3.3.1",
