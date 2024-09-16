@@ -24,6 +24,7 @@ const Section2 = (/* { handleOpen, setGetID } */) => {
             <div key={project.id} className="projects">
               <div>
                 <Image
+                  className="image"
                   src={`images/projects/${project.name}-FULL.PNG`}
                   alt="Image"
                   width="100%"
