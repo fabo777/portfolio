@@ -10,7 +10,7 @@
     "id": 1,
     "name": "Apartments",
     "link": "https://apartmani-vesna-vir.netlify.app",
-    "msg": "Full responsive multi language page for business promoting.",
+    "msg": "Fully responsive, multi-language business promotion page built with Vue.js and i18n, ensuring a seamless user experience across devices and languages.",
     "srcCode": "https://github.com/fabo777/Vir2024"
   },
   {

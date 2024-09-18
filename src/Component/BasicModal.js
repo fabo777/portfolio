@@ -10,7 +10,6 @@ export default function BasicModal({ open, handleClose, getID, myProjects }) {
   const splideRef = useRef(null);
   console.log(activeIndex);
   useEffect(() => {
-    // Update activeIndex when getID changes
     setActiveIndex(getID);
   }, [getID]);
 
@@ -43,8 +42,8 @@ export default function BasicModal({ open, handleClose, getID, myProjects }) {
             arrows: true,
             pagination: true,
             autoplay: false,
-            start: activeIndex, // Start slider at the active index
-            updateOnMove: true, // Ensure slider updates correctly
+            start: activeIndex,
+            updateOnMove: true,
           }}
           aria-label="Project Images"
           onMove={handleSlideChange}
